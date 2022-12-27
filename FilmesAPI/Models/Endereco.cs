@@ -14,5 +14,6 @@ namespace FilmesAPI.Models
         public string Bairro { get; set; }
         [DefaultValue (null)]
         public int Numero { get; set; }
+        public Cinema Cinema { get; set; }
     }
 }
