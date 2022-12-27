@@ -6,10 +6,10 @@ using RouteAttribute = Microsoft.AspNetCore.Mvc.RouteAttribute;
 using System;
 using System.Linq;
 using FilmesAPI.Data;
-using FilmesAPI.Data.Dtos;
 using Microsoft.AspNetCore.Mvc.Formatters;
 using System.IO;
 using AutoMapper;
+using FilmesAPI.Data.Dtos.Filmes;
 
 namespace FilmesAPI.Controllers
 {
@@ -18,9 +18,9 @@ namespace FilmesAPI.Controllers
 
     public class FilmeController : ControllerBase
     {
-        private FilmeContext _context;
+        private Data.AppContext _context;
         private IMapper _mapper;
-        public FilmeController(FilmeContext context, IMapper mapper) { 
+        public FilmeController(Data.AppContext context, IMapper mapper) { 
             _context = context;
             _mapper = mapper;
         }

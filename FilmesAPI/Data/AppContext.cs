@@ -4,13 +4,14 @@ using System.IO;
 
 namespace FilmesAPI.Data
 {
-    public class FilmeContext : DbContext
+    public class AppContext : DbContext
     {
-        public FilmeContext(DbContextOptions<FilmeContext> opt) : base(opt)
+        public AppContext(DbContextOptions<AppContext> opt) : base(opt)
         {
 
         }
         public DbSet<Filme> Filmes { get; set; }
+        public DbSet<Cinema> Cinema { get; set; }
 
     }
 }
