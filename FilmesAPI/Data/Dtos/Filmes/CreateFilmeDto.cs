@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using FilmesAPI.Models;
+using System.ComponentModel.DataAnnotations;
 
 namespace FilmesAPI.Data.Dtos.Filmes
 {

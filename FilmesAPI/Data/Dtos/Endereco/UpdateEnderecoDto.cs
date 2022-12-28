@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel;
 
-namespace FilmesAPI.Data.Dtos.Endereco
+namespace FilmesAPI.Data.Dtos
 {
     public class UpdateEnderecoDto
     {
