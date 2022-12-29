@@ -1,4 +1,6 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.Text.Json.Serialization;
 
 namespace FilmesAPI.Models
 {
@@ -13,6 +15,8 @@ namespace FilmesAPI.Models
         public int EnderecoId { get; set; }
         public virtual Gerente Gerente { get; set; }
         public int GerenteId { get; set; }
+        [JsonIgnore]
+        public virtual List<Sessao> Sessoes { get; set; }
 
     }
 }

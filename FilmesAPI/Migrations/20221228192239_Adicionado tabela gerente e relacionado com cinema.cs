@@ -38,7 +38,7 @@ namespace FilmesAPI.Migrations
                 column: "GerenteId",
                 principalTable: "Gerentes",
                 principalColumn: "Id",
-                onDelete: ReferentialAction.Cascade);
+                onDelete: ReferentialAction.Restrict);
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)

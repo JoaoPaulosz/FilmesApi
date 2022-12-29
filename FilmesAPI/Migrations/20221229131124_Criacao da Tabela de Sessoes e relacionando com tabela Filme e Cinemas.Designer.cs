@@ -3,14 +3,16 @@ using System;
 using FilmesAPI.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace FilmesAPI.Migrations
 {
     [DbContext(typeof(Data.AppContext))]
-    partial class FilmeContextModelSnapshot : ModelSnapshot
+    [Migration("20221229131124_Criacao da Tabela de Sessoes e relacionando com tabela Filme e Cinemas")]
+    partial class CriacaodaTabeladeSessoeserelacionandocomtabelaFilmeeCinemas
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
